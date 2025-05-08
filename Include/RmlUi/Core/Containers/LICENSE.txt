@@ -3,12 +3,13 @@ their full licenses - all MIT licensed.
 
 ---
 
-robin_hood unordered map & set
-https://github.com/martinus/robin-hood-hashing
+unordered_dense
+A fast & densely stored hashmap and hashset based on robin-hood backward shift deletion for C++17 and later.
+https://github.com/martinus/unordered_dense
 
-Licensed under the MIT License <http://opensource.org/licenses/MIT>.
-SPDX-License-Identifier: MIT
-Copyright (c) 2018-2020 Martin Ankerl <http://martin.ankerl.com>
+MIT License
+
+Copyright (c) 2022 Martin Leitner-Ankerl
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

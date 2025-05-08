@@ -241,7 +241,7 @@ target_sources(rmlui_core PRIVATE
 	"${PROJECT_SOURCE_DIR}/Include/RmlUi/Core/ComputedValues.h"
 	"${PROJECT_SOURCE_DIR}/Include/RmlUi/Core/Containers/itlib/flat_map.hpp"
 	"${PROJECT_SOURCE_DIR}/Include/RmlUi/Core/Containers/itlib/flat_set.hpp"
-	"${PROJECT_SOURCE_DIR}/Include/RmlUi/Core/Containers/robin_hood.h"
+	"${PROJECT_SOURCE_DIR}/Include/RmlUi/Core/Containers/unordered_dense.h"
 	"${PROJECT_SOURCE_DIR}/Include/RmlUi/Core/Context.h"
 	"${PROJECT_SOURCE_DIR}/Include/RmlUi/Core/ContextInstancer.h"
 	"${PROJECT_SOURCE_DIR}/Include/RmlUi/Core/ConvolutionFilter.h"

@@ -58,7 +58,7 @@
 	#else
 		#include "../Core/Containers/itlib/flat_map.hpp"
 		#include "../Core/Containers/itlib/flat_set.hpp"
-		#include "../Core/Containers/robin_hood.h"
+		#include "../Core/Containers/unordered_dense.h"
 	#endif // RMLUI_NO_THIRDPARTY_CONTAINERS
 
 namespace Rml {
@@ -105,11 +105,11 @@ template <typename T>
 using SmallOrderedSet = std::set<T>;
 	#else
 template <typename Key, typename Value>
-using UnorderedMap = robin_hood::unordered_flat_map<Key, Value>;
+using UnorderedMap = ankerl::unordered_dense::map<Key, Value>;
 template <typename Key, typename Value>
 using SmallUnorderedMap = itlib::flat_map<Key, Value>;
 template <typename T>
-using UnorderedSet = robin_hood::unordered_flat_set<T>;
+using UnorderedSet = ankerl::unordered_dense::set<T>;
 template <typename T>
 using SmallUnorderedSet = itlib::flat_set<T>;
 template <typename T>
