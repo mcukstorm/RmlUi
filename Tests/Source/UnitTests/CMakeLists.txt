@@ -20,6 +20,7 @@ add_executable(${TARGET_NAME}
 	FlexFormatting.cpp
 	Layout.cpp
 	Localization.cpp
+	LuaDOM.cpp
 	main.cpp
 	Math.cpp
 	MediaQuery.cpp
@@ -31,6 +32,9 @@ add_executable(${TARGET_NAME}
 	StableVector.cpp
 	StringUtilities.cpp
 	StyleSheetParser.cpp
+	StyleSheetParserCalc.cpp
+	StyleSheetParserAttr.cpp
+	StyleSheetParserVar.cpp
 	Template.cpp
 	URL.cpp
 	Variant.cpp
@@ -44,6 +48,7 @@ target_link_libraries(${TARGET_NAME} PRIVATE
 	rmlui_core
 	doctest::doctest
 	trompeloeil::trompeloeil
+	muparser::muparser
 )
 
 if(NOT EMSCRIPTEN)

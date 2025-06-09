@@ -1,5 +1,9 @@
 add_subdirectory("Core")
 
+if(RMLUI_CSS_CALC_SUPPORT)
+	add_subdirectory("muparser")
+endif()
+
 if(RMLUI_LOTTIE_PLUGIN)
 	add_subdirectory("Lottie")
 endif()
